@@ -1,0 +1,9 @@
+.infotable {
+    margin-top: 75px;
+    margin-bottom: 150px;
+}
+
+td,
+th {
+    padding: 5px 28px;
+}

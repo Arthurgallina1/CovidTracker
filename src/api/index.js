@@ -26,6 +26,17 @@ export const fetchData = async (country) => {
         console.log(err);
     }
 };
+export const fetchCountryDetail = async (country) => {
+    try {
+        const { data } = await axios.get(
+            `https://covid19.mathdro.id/api/countries/${country}/confirmed`
+        );
+
+        return data;
+    } catch (err) {
+        console.error(err);
+    }
+};
 
 export const fetchDataDaily = async () => {
     try {

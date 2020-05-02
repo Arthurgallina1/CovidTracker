@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Cards, Chart, CountryPicker } from "./Components";
+import { Cards, Chart, CountryPicker, Table } from "./Components";
 import styles from "./App.module.css";
 import { fetchData } from "./api";
 import CoronaLogo from "./imgs/covid.jpg";
@@ -29,6 +29,7 @@ export default function App() {
             <Cards data={data} />
             <CountryPicker handleCountryChange={handleCountryChange} />
             <Chart country={country} data={data} />
+            <Table country={country} data={data} />
         </div>
     );
 }

@@ -1,11 +1,12 @@
 .container {
-    display: flex;
-    justify-content: center;
-    width: 75%;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 300px;
 }
 
 @media (min-width: 1500px) {
-    .container {
-        width: 58%;
-    }
+  .container {
+    width: 58%;
+  }
 }
